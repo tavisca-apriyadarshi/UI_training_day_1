@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            ul.navigation_bar {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              border-bottom: 1px solid #bbb;
+              background-image: linear-gradient(to right, red , grey );
+            }
+
+            li.navigation_bar {
+              float: left;
+              border-right:1px solid #bbb;
+            }
+
+            li.navigation_bar:last-child {
+              border-right: none;
+            }
+
+            li.navigation_bar a.active {
+              background-color: #123456;
+              color: white;
+            }
+
+            li.navigation_bar a {
+              display: block;
+              color: black;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            li.navigation_bar a:hover:not(.active) {
+              background-color: #011;
+              color: white;
+
+            }
+
+            
+
+            .dropbtn {
+              color: white;
+              
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+            }
+
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+
+            .dropdown-content {
+              display: none;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+
+            .dropdown-content a {
+              color: black;
+              
+              text-decoration: none;
+              display: block;
+            }
+
+            .dropdown-content:hover {
+              display: block;
+            }
+            .dropdown:hover .dropdown-content {display: block;}
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+        </style>
+    </head>
+    <body>
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxlVQI8N-8ntuU-eqkjyMSK0Cimyi8lCR1rVsfQ9vwJlL4wkpTHA" width="200em" float="left" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9V0dZljLwCf8yR1MIUj7vTl1-NMK3YvlwHqPYxa9yDv8yZYlDag" width="200em" align="right" height="90" />
+      </div>
+      
+      <p></p>
+    <ul class="navigation_bar">
+      <li class="navigation_bar">
+      <div class="dropdown">
+          <button class="dropbtn" style="background-color: red"><a class="active" href="#home">Home</a></button>
+        </div>
+      </li>
+
+      <li class="navigation_bar">
+        <div class="dropdown">
+          <button class="dropbtn" style="background-color: red"><a href="#news">News</a></button>
+          <div class="dropdown-content" style="left:0;">
+            <a href="https://www.marvel.com/articles" target="new">Marvel</a>
+            <a href="https://www.dccomics.com/news" target="new">DC</a>
+            <a href="https://www.cbr.com/category/comics/news/" target="_blank">More Comics</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="navigation_bar">
+        <div class="dropdown">
+          <button class="dropbtn" style="background-color: red"><a href="#contact">Contact</a></button>
+          <div class="dropdown-content" style="left:0;">
+            <a href="#">Phone</a>
+            <a href="#">Email</a>
+            <a href="#">Social Media</a>
+          </div>
+        </div>
+      </li>
+
+      <li style="float:right" class="navigation_bar">
+        <div class="dropdown">
+          <button class="dropbtn" style="background-color: grey"><a href="https://comicconindia.com/" target="new">About</a></button>
+        </div>
+      </li>
+    </ul>
+    <p></p>
+    <div>
+          <a href="https://www.marvel.com/" target="new"><img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelbattlelines_lob_crd_01_1.jpg" width="48%" height="400px" align="left" /></a>
+
+          <a href="https://www.dccomics.com/" target="new"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--qteEUfM_--/c_scale,f_auto,fl_progressive,q_80,w_800/r6t4pqyk9uj3jejzb8d0.png" width="48%" height="400px" align="right" /></a>
+          
+    </div>
+    </body>
+</html>
